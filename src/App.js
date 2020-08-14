@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Board, Timer} from './components'
+import {Board} from './components'
 
 export const App = () => {
   return (
