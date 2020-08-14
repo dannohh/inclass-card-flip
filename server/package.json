@@ -2,9 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "start-server": "nodemon 'dist/main.js'",
+   "watcher": "webpack --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,9 @@
     "@typescript-eslint/eslint-plugin": "^3.9.0",
     "@typescript-eslint/parser": "^3.9.0",
     "eslint": "^7.6.0",
-    "eslint-plugin-react": "^7.20.6"
+    "eslint-plugin-react": "^7.20.6",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
