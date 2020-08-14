@@ -2,6 +2,8 @@ import PropTypes from "prop-types"
 import React, { useState, useEffect} from "react"
 import {Card} from "./Card"
 
+
+
 import api from "api"
 
 // import shuffle from "lodash.shuffle", Ask about lodash not working for shuffle
@@ -26,6 +28,9 @@ export const Cards = ({ handler }) => {
       setCards(cardsWithIDs)
     })()
   }, [])
+
+
+
 
   const flipHandler = ({ currentTarget: { dataset } }) => {
     const { code, id } = dataset
@@ -84,7 +89,9 @@ export const Cards = ({ handler }) => {
       )
     })
 
-  return <div className={styles.container}>{renderCards()}</div>
+  return(
+  <div className={styles.container}>{renderCards()}
+  </div>)
 }
 
 Cards.propTypes = {
